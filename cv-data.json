@@ -1,0 +1,163 @@
+{
+    "name": "Michael Bracey",
+    "job_title": "Software Developer",
+    "img": "url",
+    "email": "michaelbracey24@gmail.com",
+    "telephone": "0758 333 6762",
+    "address": "KT3 3EE",
+    "summary_1": "I specialise in front-end development, and love learning new technology!",
+    "summary_2":"In the past year I have been travelling East Europe and South-East Asia, as well as working on personal projects (see below).",
+    "social": [
+        {
+            "name": "Portfolio",
+            "url": null,
+            "svg_path": "img/globe.svg"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/Mbrace1/",
+            "svg_path": "img/globe.svg"
+        },
+        {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/michael-bracey24/",
+            "svg_path": "img/globe.svg"
+        }
+    ],
+    "work_experience": [
+        {
+            "company": "Playtech",
+            "job": "Front-end Software Game Developer Apprentice",
+            "start_date": "July 2022",
+            "end_date": "December 2023",
+            "summary": "",
+            "highlights": [
+                "Worked in an Agile team, where we had two week sprints, I helped build and maintain casino games such as slot machines and scratch cards.",
+                "Conducted research on building games with Unity and C#.",
+                "Obtained a distinction grade in my Level 4 Software Developer Apprenticeship."
+            ]
+        },
+        {
+            "company": "Hays",
+            "job": "Junior Digital Developer",
+            "start_date": "August 2021",
+            "end_date": "May 2022",
+            "summary": "",
+            "highlights": [
+                "Designed and developed mobile-first microsites for clients to advertise job vacancies.",
+                "Worked as part of an international team to build salary guide sites for different European regions such as France, Portugal, Poland, etc.",
+                "Maintained and fixed existing microsites, while making sure they still work on different browsers and devices."
+            ]
+        },
+        {
+            "company": "Wetherspoons",
+            "job": "Bartender",
+            "start_date": "September 2019",
+            "end_date": "June 2021",
+            "summary": "",
+            "highlights": [
+                "Required significant multi-tasking and adaptability, switching between tasks and taking a proactive approach.",
+                "Worked as part of a large team to ensure all customers’ orders were taken and delivered quickly and to a high standard of quality.",
+                "Developed excellent rapport with both customers and colleagues in order to fully understand and meet their needs."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "CRUD app habit tracker",
+            "summary": "",
+            "img": "",
+            "start_date": "sad",
+            "end_date": "dsad",
+            "link": "url"
+        },
+        {
+            "name": "React web game",
+            "summary": "",
+            "img": "",
+            "start_date": "sdd",
+            "end_date": "asdsa",
+            "link": "url"
+        },
+        {
+            "name": "Pixel Game Godot",
+            "summary": "",
+            "img": "",
+            "start_date": "Dec 2024",
+            "end_date": "Present",
+            "link": "url"
+        },
+        {
+            "name": "Plinko Game Unity",
+            "summary": "",
+            "img": "",
+            "start_date": "asd",
+            "end_date": "asds",
+            "link": "url"
+        }
+    ],
+    "skills": [
+        {
+            "name": "JavaScript / TypeScript"
+        },
+        {
+            "name": "Version Control / Git"
+        },
+        {
+            "name": "React JS"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "Godot and GdScript"
+        },
+        {
+            "name": "Unity and C#"
+        }
+    ],
+    "education": [
+        {
+            "name": "Software Developer Apprenticeship with Multiverse",
+            "summary": "Completed and achieved a distinction grade in my Level 4 Software Developer Apprenticeship.",
+            "start_date": "2022",
+            "end_date": "2023"
+        },
+        {
+            "name": "IT Career Switch",
+            "summary": "A 12 month coding traineeship to develop the skills needed to become a full stack developer.",
+            "start_date": "2020",
+            "end_date": "2021"
+        },
+        {
+            "name": "Introduction to Programming with Python Short Course",
+            "summary": "Enrolled with University of London for a month of online lectures and coding exercises to learn about programming with Python.",
+            "start_date": "2020",
+            "end_date": "2020"
+        },
+        {
+            "name": "Richard Challoner School",
+            "summary": "Finished secondary school with A Levels in Physics, Maths and Geography, and 10 GCSEs.",
+            "start_date": "2012",
+            "end_date": "2019"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Game Development",
+            "summary": "",
+            "img": "",
+            "link": "url"
+        },
+        {
+            "name": "Pixel art",
+            "summary": "",
+            "img": "",
+            "link": "url"
+        }
+
+    ]
+}
