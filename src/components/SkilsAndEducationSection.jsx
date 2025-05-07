@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ColumnRight = ({skills, education, interests}) => {
+const SkilsAndEducationSection = ({skills, education, interests}) => {
     return (
-        <aside className='pt-6 md:border-l-2 md:border-l-stone-300 md:ps-2'>
+        <section className='pt-6 md:border-l-2 md:border-l-stone-300 md:ps-2'>
             <h3 className='section-header-1 text-center text-3xl mb-2'>Skills</h3>
             <ul className='content p-4 flex flex-wrap'>
                 {skills.map((skill, index) => {
@@ -40,8 +40,8 @@ const ColumnRight = ({skills, education, interests}) => {
                 })}
             </ul> */}
 
-        </aside>
+        </section>
     )
 }
 
-export default ColumnRight
+export default SkilsAndEducationSection

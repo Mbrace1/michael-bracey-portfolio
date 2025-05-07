@@ -4,7 +4,7 @@
     "img": "url",
     "email": "michaelbracey24@gmail.com",
     "telephone": "0758 333 6762",
-    "address": "KT3 3EE",
+    "address": "London, Kingston Upon Thames, KT3 3EE",
     "summary_1": "I specialise in front-end development, and love learning new technology!",
     "summary_2":"In the past year I have been travelling East Europe and South-East Asia, as well as working on personal projects (see below).",
     "social": [
@@ -56,7 +56,7 @@
             "end_date": "June 2021",
             "summary": "",
             "highlights": [
-                "Required significant multi-tasking and adaptability, switching between tasks and taking a proactive approach.",
+                "Required significant multi-tasking and adaptability, while serving a range of customers from families to university students.",
                 "Worked as part of a large team to ensure all customers’ orders were taken and delivered quickly and to a high standard of quality.",
                 "Developed excellent rapport with both customers and colleagues in order to fully understand and meet their needs."
             ]
@@ -67,33 +67,22 @@
             "name": "CRUD app habit tracker",
             "summary": "",
             "img": "",
-            "start_date": "sad",
-            "end_date": "dsad",
+            "progress": "sad",
             "link": "url"
         },
         {
-            "name": "React web game",
-            "summary": "",
+            "name": "Last Castle Game",
+            "summary": "A free tower defence game made in the Godot engine which I have been working on since December 2024.",
             "img": "",
-            "start_date": "sdd",
-            "end_date": "asdsa",
-            "link": "url"
+            "progress": "Currently Developing",
+            "link": "https://mich24.itch.io/last-castle"
         },
         {
-            "name": "Pixel Game Godot",
-            "summary": "",
+            "name": "Apprenticeship project: A Plinko Prototype",
+            "summary": "My final project for my apprenticeship was built with Unity and C# within 2 months. This was followed by a 4,000 word essay and an interview where I discussed my work with an assessor.",
             "img": "",
-            "start_date": "Dec 2024",
-            "end_date": "Present",
-            "link": "url"
-        },
-        {
-            "name": "Plinko Game Unity",
-            "summary": "",
-            "img": "",
-            "start_date": "asd",
-            "end_date": "asds",
-            "link": "url"
+            "progress": "Completed",
+            "link": "https://mich24.itch.io/plinko"
         }
     ],
     "skills": [

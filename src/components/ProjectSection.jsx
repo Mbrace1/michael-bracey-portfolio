@@ -1,18 +1,19 @@
 import React from 'react'
+import Project from './Project'
 
-const ProjectSection = ({name, summary, img, start_date, end_date, link}) => {
-    let date = `${start_date} - ${end_date}`;
-    let has_img = img ? "" : false
+const ProjectSection = ({projects, projects_title}) => {
     return (
-        <div className='mb-4'>
-            <h3 className='section-header-2 mb-2 text-2xl font-bold'>{name}</h3>
-            <p className='italic mb-1'>{date}</p>
-            <p className='mb-1'>{summary}</p>
-            {has_img &&
-            <img src={project_img} alt={summary} />
-            }
-            <p>{link}</p>
-        </div>
+    <section className='mb-2'>
+        <h2 className='section-header-1 text-center text-3xl mb-2'>
+            {projects_title}
+        </h2>
+            {projects.map((project, index) => {
+            return <Project key={index}
+            name={project.name} summary={project.summary} 
+            progress={project.progress}
+            img={project.img} link={project.link}/>
+            })}
+    </section>
     )
 }
 
