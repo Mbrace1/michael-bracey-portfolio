@@ -12,6 +12,11 @@ function App() {
       <header className='p-2 border-b-2 border-b-stone-300 text-center'>
         <h1 className='text-3xl mb-2 font-bold'>{CV.name}</h1>
         <p className='mb-2'>{`${CV.email} | ${CV.telephone} | ${CV.address}`}</p>
+        <p>{CV.social.map((s) => {
+          return <a className="mx-2 font-medium text-blue-600 dark:text-blue-500 hover:underline" 
+          href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>
+        })}
+        </p>
         <p><b>{`I am a ${CV.job_title}.`}</b> {CV.summary_1}</p>
         <p>{`${CV.summary_2}`}</p>
       </header>

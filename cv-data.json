@@ -5,23 +5,16 @@
     "email": "michaelbracey24@gmail.com",
     "telephone": "0758 333 6762",
     "address": "London, Kingston Upon Thames, KT3 3EE",
-    "summary_1": "I specialise in front-end development, and love learning new technology!",
+    "summary_1": "I specialize in front-end development, and love learning new technology!",
     "summary_2":"In the past year I have been travelling East Europe and South-East Asia, as well as working on personal projects (see below).",
     "social": [
         {
-            "name": "Portfolio",
-            "url": null,
-            "svg_path": "img/globe.svg"
-        },
-        {
             "name": "Github",
-            "url": "https://github.com/Mbrace1/",
-            "svg_path": "img/globe.svg"
+            "url": "https://github.com/Mbrace1/"
         },
         {
             "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/michael-bracey24/",
-            "svg_path": "img/globe.svg"
+            "url": "https://www.linkedin.com/in/michael-bracey24/"
         }
     ],
     "work_experience": [
@@ -64,13 +57,6 @@
     ],
     "projects": [
         {
-            "name": "CRUD app habit tracker",
-            "summary": "",
-            "img": "",
-            "progress": "sad",
-            "link": "url"
-        },
-        {
             "name": "Last Castle Game",
             "summary": "A free tower defence game made in the Godot engine which I have been working on since December 2024.",
             "img": "",
@@ -96,22 +82,22 @@
             "name": "React JS"
         },
         {
-            "name": "HTML"
+            "name": "HTML / CSS"
         },
         {
-            "name": "CSS"
+            "name": "Tailwind"
         },
         {
-            "name": "Godot and GdScript"
+            "name": "Godot / GdScript"
         },
         {
-            "name": "Unity and C#"
+            "name": "Unity / C#"
         }
     ],
     "education": [
         {
             "name": "Software Developer Apprenticeship with Multiverse",
-            "summary": "Completed and achieved a distinction grade in my Level 4 Software Developer Apprenticeship.",
+            "summary": "Achieved a Distinction in my Software Engineering Level 4 Qualification.",
             "start_date": "2022",
             "end_date": "2023"
         },
