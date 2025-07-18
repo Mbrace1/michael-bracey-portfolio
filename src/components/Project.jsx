@@ -12,7 +12,7 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
             {!flipped ? (
                 <>
                     {has_img &&
-                    <img src={`/images/${img}`} alt={name + " image"} className='rounded-t-xl'/>
+                    <img src={`public/images/${img}`} alt={name + " image"} className='rounded-t-xl'/>
                     }
                     <div className='flex flex-col justify-end'>
                         <div className="p-4">
