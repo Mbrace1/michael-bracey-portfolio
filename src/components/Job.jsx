@@ -8,7 +8,7 @@ const Job = (
     let date = `${start_date} - ${end_date}`;
     let role = `${job} at ${company}`
     return (
-        <section className='p-4'>
+        <section className='p-2 md:p-4'>
             <h3 className='section-header-2 mb-2 text-2xl font-bold'>
                 {role}
             </h3>

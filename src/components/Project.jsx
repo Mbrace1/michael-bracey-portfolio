@@ -1,16 +1,46 @@
-import React from 'react'
 
-const Project = ({name, summary, img, progress, link}) => {
-    let has_img = img ? "" : false
+import Button from './generic/Button';
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
+
+const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip}) => {
+
+    let has_img = img ? img : false
+    console.log(has_img);
+    
     return (
-        <div className='p-4'>
-            <h3 className='section-header-2 mb-2 text-2xl font-bold'>{name}</h3>
-            <p className='italic mb-1'>{progress}</p>
-            <p className='mb-1'>{summary}</p>
-            {has_img &&
-            <img src={project_img} alt={summary} />
+        <div className='h-120'>
+            {!flipped ? (
+                <>
+                    {has_img &&
+                    <img src={`/images/${img}`} alt={name + " image"} className='rounded-t-xl'/>
+                    }
+                    <div className='flex flex-col justify-end'>
+                        <div className="p-4">
+                            <div className='flex flex-row justify-between'>
+                                <h3 className='section-header-2 mb-2 text-2xl font-bold'>{name}</h3>
+                                <Button onClick={onFlip} variant={"flat"} className='bg-gray-200'>
+                                    i
+                                </Button>
+                            </div>
+                            <p className='italic mb-1'>{progress}</p>
+                            <p><a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={link} target="_blank" rel="noopener noreferrer">See the live version here</a></p>
+                        </div>
+                        <div className='flex flex-row pb-2'>
+                            {tags.map(t => {
+                                return (
+                                    <span className='p-2 ml-2 bg-gray-200 rounded-xl'>{t}</span>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </>
+            ) : (
+                <>
+                    <Button onClick={onFlip}>back</Button>
+                    <p className='mb-1'>{summary}</p>
+                </>
+            )
             }
-            <p>Link to live project: <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={link} target="_blank" rel="noopener noreferrer">{link}</a></p>
         </div>
     )
 }

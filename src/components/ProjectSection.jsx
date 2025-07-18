@@ -1,19 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Project from './Project'
+import Section from './generic/Section'
+import Card from './generic/Card'
 
-const ProjectSection = ({projects, projects_title}) => {
+const ProjectSection = ({projects}) => {
+    const [flippedProject, setFlippedProject] = useState(null)
+
+    function handleFlip(idx) {
+        setFlippedProject(prev => prev === idx ? null : idx)
+    }
+
     return (
-    <section className='mb-2'>
-        <h2 className='section-header-1 text-center text-3xl mb-2'>
-            {projects_title}
-        </h2>
-            {projects.map((project, index) => {
-            return <Project key={index}
-            name={project.name} summary={project.summary} 
-            progress={project.progress}
-            img={project.img} link={project.link}/>
-            })}
-    </section>
+        <Section id={"projects"} title={"Projects"}>
+            <div className='flex flex-row flex-wrap justify-center'>
+                {projects.map((p, idx) => {
+                    return (
+                    <div className='w-full lg:w-1/2 p-4'>
+                        <Card key={idx}>
+                            <Project 
+                            name={p.name}
+                            summary={p.summary}
+                            img={p.img}
+                            progress={p.progress}
+                            link={p.link}
+                            tags={p.tags}
+                            flipped={flippedProject === idx}
+                            onFlip={() => handleFlip(idx)}
+                            />
+                        </Card>
+                    </div>
+                    )
+                })}
+            </div>
+        </Section>
     )
 }
 
