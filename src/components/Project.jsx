@@ -1,6 +1,6 @@
 
 import Button from './generic/Button';
-import { InformationCircleIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
 
 const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip}) => {
 
@@ -18,8 +18,8 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
                         <div className="p-4">
                             <div className='flex flex-row justify-between'>
                                 <h3 className='section-header-2 mb-2 text-2xl font-bold'>{name}</h3>
-                                <Button onClick={onFlip} variant={"flat"} className='bg-gray-200'>
-                                    i
+                                <Button onClick={onFlip} variant={"flat"} className='bg-gray-200 rounded-full'>
+                                    <InformationCircleIcon className="size-6" />
                                 </Button>
                             </div>
                             <p className='italic mb-1'>{progress}</p>
@@ -35,10 +35,16 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
                     </div>
                 </>
             ) : (
-                <>
-                    <Button onClick={onFlip}>back</Button>
-                    <p className='mb-1'>{summary}</p>
-                </>
+                <div className="p-4">
+                    <div className='flex flex-row justify-begin mb-2'>
+                        <Button onClick={onFlip} variant={"flat"} className="bg-gray-200 rounded-full">
+                            <ChevronLeftIcon className="size-6" />
+                        </Button>
+                    </div>
+                    <div className='flex flex-col justify-center'>
+                        <p className='mb-1'>{summary}</p>
+                    </div>
+                </div>
             )
             }
         </div>
