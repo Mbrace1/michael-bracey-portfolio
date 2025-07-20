@@ -1,6 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
 @import "tailwindcss";
 
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,11 +11,15 @@
   font-size: 14px;
 
   color-scheme: light;
-  background-color: whitesmoke;
+  background-color: var(--color-amber-50);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  background-color: var(--color-gray-800);
 }
 
 body {

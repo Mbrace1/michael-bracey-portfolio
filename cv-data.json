@@ -1,7 +1,7 @@
 {
     "name": "Michael Bracey",
     "job_title": "Software Developer",
-    "tags": "software developer, pixel artist, game developer",
+    "tags": ["software developer", "game developer", "pixel artist"],
     "img": "url",
     "email": "michaelbracey24@gmail.com",
     "about": "I'm a front-end software developer with a passion for pixel art! Here you can look at my latest projects.",

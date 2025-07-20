@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import CV from '../cv-data.json'
 import Navbar from './components/Navbar'
 import WorkSection from './components/WorkSection'

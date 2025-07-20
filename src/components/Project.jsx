@@ -1,6 +1,6 @@
 
 import Button from './generic/Button';
-import { InformationCircleIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon, ChevronLeftIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip}) => {
 
@@ -8,7 +8,7 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
     console.log(has_img);
     
     return (
-        <div className='h-120'>
+        <div className=''>
             {!flipped ? (
                 <>
                     {has_img &&
@@ -18,17 +18,21 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
                         <div className="p-4">
                             <div className='flex flex-row justify-between'>
                                 <h3 className='section-header-2 mb-2 text-2xl font-bold'>{name}</h3>
-                                <Button onClick={onFlip} variant={"flat"} className='bg-gray-200 rounded-full'>
+                                <Button onClick={onFlip} variant={"flat"} className='bg-gray-200 dark:bg-gray-700 rounded-full'>
                                     <InformationCircleIcon className="size-6" />
                                 </Button>
                             </div>
                             <p className='italic mb-1'>{progress}</p>
-                            <p><a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={link} target="_blank" rel="noopener noreferrer">See the live version here</a></p>
+                            <p><a className="font-medium text-blue-600 dark:text-blue-500 hover:underline inline-flex items-center" 
+                            href={link} target="_blank" rel="noopener noreferrer">
+                                <span>See the live version here</span>
+                                <ArrowTopRightOnSquareIcon className="size-5 ml-2" />
+                            </a></p>
                         </div>
                         <div className='flex flex-row pb-2'>
                             {tags.map(t => {
                                 return (
-                                    <span className='p-2 ml-2 bg-gray-200 rounded-xl'>{t}</span>
+                                    <span className='p-2 ml-2 bg-gray-200 dark:bg-gray-700 rounded-xl'>{t}</span>
                                 )
                             })}
                         </div>
@@ -37,7 +41,7 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
             ) : (
                 <div className="p-4">
                     <div className='flex flex-row justify-begin mb-2'>
-                        <Button onClick={onFlip} variant={"flat"} className="bg-gray-200 rounded-full">
+                        <Button onClick={onFlip} variant={"flat"} className="bg-gray-200 dark:bg-gray-700 rounded-full">
                             <ChevronLeftIcon className="size-6" />
                         </Button>
                     </div>
