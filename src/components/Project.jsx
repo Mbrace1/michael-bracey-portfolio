@@ -22,7 +22,7 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
                                     <InformationCircleIcon className="size-6" />
                                 </Button>
                             </div>
-                            <p className='italic mb-1'>{progress}</p>
+                            <p className='mb-1'>{progress}</p>
                             <p><a className="font-medium text-blue-600 dark:text-blue-500 hover:underline inline-flex items-center" 
                             href={link} target="_blank" rel="noopener noreferrer">
                                 <span>See the live version here</span>

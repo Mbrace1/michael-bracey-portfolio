@@ -28,7 +28,7 @@ const Navbar = () => {
             <ThemeToggle/>
         </div>
 
-        <button className="md:hidden text-gray-800" onClick={toggleMenu}>
+        <button className="md:hidden text-gray-800 dark:text-gray-100" onClick={toggleMenu}>
           {isOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
         </button>
       </div>
