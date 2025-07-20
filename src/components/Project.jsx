@@ -1,8 +1,8 @@
 
 import Button from './generic/Button';
-import { InformationCircleIcon, ChevronLeftIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon, ChevronLeftIcon, ArrowTopRightOnSquareIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
-const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip}) => {
+const Project = ({name, summary, img = "", progress, link, tags, mobileSupport, flipped, onFlip}) => {
 
     let has_img = img ? img : false
     console.log(has_img);
@@ -23,6 +23,10 @@ const Project = ({name, summary, img = "", progress, link, tags, flipped, onFlip
                                 </Button>
                             </div>
                             <p className='mb-1'>{progress}</p>
+                            <p className='mb-1 flex flex-row items-center'>
+                                <span>Works on mobile</span>
+                                {mobileSupport ? <CheckIcon className="size-5 ml-2 text-green-500"/> : <XMarkIcon className="size-5 ml-2 text-red-500"/>}
+                            </p>
                             <p><a className="font-medium text-blue-600 dark:text-blue-500 hover:underline inline-flex items-center" 
                             href={link} target="_blank" rel="noopener noreferrer">
                                 <span>See the live version here</span>

@@ -24,6 +24,7 @@ const ProjectSection = ({projects}) => {
                             progress={p.progress}
                             link={p.link}
                             tags={p.tags}
+                            mobileSupport={p.mobile}
                             flipped={flippedProject === idx}
                             onFlip={() => handleFlip(idx)}
                             />
