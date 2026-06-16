@@ -1,12 +1,15 @@
 import React from 'react'
 import Section from './generic/Section'
 
-const About = ({text, name, tags}) => {
-    
+const About = ({text, name, jobTitle, tags}) => {
+
   return (
     <Section id={"about"} title={"About"}>
         <div>
-            <h2 className='text-5xl font-bold dark:text-gray-100 mb-2'>{name}</h2>
+            <h1 className='text-5xl font-bold dark:text-gray-100 mb-1'>{name}</h1>
+            {jobTitle && (
+                <p className='text-2xl text-gray-500 dark:text-gray-300 mb-3'>{jobTitle}</p>
+            )}
             <div className='flex flex-wrap mb-4'>
                 {tags.map(t => {
                     return (

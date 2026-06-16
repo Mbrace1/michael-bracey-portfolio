@@ -15,8 +15,8 @@ const ProjectSection = ({projects}) => {
             <div className='flex flex-row flex-wrap justify-center'>
                 {projects.map((p, idx) => {
                     return (
-                    <div className='w-full md:w-1/2 p-4'>
-                        <Card key={idx}>
+                    <div key={idx} className='w-full md:w-1/2 p-4'>
+                        <Card>
                             <Project 
                             name={p.name}
                             summary={p.summary}

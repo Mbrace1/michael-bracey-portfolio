@@ -63,55 +63,6 @@
     ],
     "projects_old": [
     ],
-    "skills": [
-        {
-            "name": "JavaScript / TypeScript"
-        },
-        {
-            "name": "Version Control / Git"
-        },
-        {
-            "name": "React JS"
-        },
-        {
-            "name": "HTML / CSS"
-        },
-        {
-            "name": "Tailwind"
-        },
-        {
-            "name": "Godot / GdScript"
-        },
-        {
-            "name": "Unity / C#"
-        }
-    ],
-    "education": [
-        {
-            "name": "Software Developer Apprenticeship with Multiverse",
-            "summary": "Achieved a Distinction in my Software Engineering Level 4 Qualification.",
-            "start_date": "2022",
-            "end_date": "2023"
-        },
-        {
-            "name": "IT Career Switch",
-            "summary": "A 6 month coding traineeship to develop the skills needed to become a full stack developer.",
-            "start_date": "2020",
-            "end_date": "2021"
-        },
-        {
-            "name": "Introduction to Programming with Python Short Course",
-            "summary": "Enrolled with University of London for a month of online lectures and coding exercises to learn about programming with Python.",
-            "start_date": "2020",
-            "end_date": "2020"
-        },
-        {
-            "name": "Richard Challoner School",
-            "summary": "Finished secondary school with A Levels in Physics, Maths and Geography, and 10 GCSEs.",
-            "start_date": "2012",
-            "end_date": "2019"
-        }
-    ],
     "interests": [
         {
             "name": "Game Development",

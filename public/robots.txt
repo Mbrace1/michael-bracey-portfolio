@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mbrace1.github.io/michael-bracey-portfolio/sitemap.xml
